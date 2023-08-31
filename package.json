@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2"
+  },
+  "name": "b1",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "beautiful": "lint-staged",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/app.scss --output src/public/css/app.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tutorial",
+    "nodejs"
+  ],
+  "author": "minh",
+  "license": "ISC",
+  "description": "",
+  "lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --tab-width 4 --trailing-comma all --write"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  }
+}
