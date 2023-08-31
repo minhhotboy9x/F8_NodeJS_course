@@ -21,7 +21,8 @@
   "license": "ISC",
   "description": "",
   "lint-staged": {
-    "src/**/*.{js,json,scss}": "prettier --single-quote --tab-width 4 --trailing-comma all --write"
+    "src/**/*.{js,json,scss}": "prettier --single-quote --tab-width 4 --trailing-comma all --write",
+    ".{js,json,scss}": "prettier --single-quote --tab-width 4 --trailing-comma all --write"
   },
   "devDependencies": {
     "husky": "^8.0.3",
